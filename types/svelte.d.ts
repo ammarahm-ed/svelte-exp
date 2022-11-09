@@ -12,7 +12,7 @@ declare global {
       Element extends NSDefaultComponents,
       Key extends keyof NSDefaultComponents
     >(
-      element: keyof NSDefaultComponents | undefined | null,
+      element: Key | undefined | null,
       attrs: Element[Key]
     ): Element[Key];
 
@@ -22,7 +22,7 @@ declare global {
       T
     >(
       // "undefined | null" because of <svelte:element>
-      element: keyof NSDefaultComponents | undefined | null,
+      element: Key | undefined | null,
       attrsEnhancers: T,
       attrs: Element[Key] & T
     ): Element[Key];
