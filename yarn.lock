@@ -242,6 +242,11 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
+"@nativescript/android@8.3.1":
+  version "8.3.1"
+  resolved "https://registry.yarnpkg.com/@nativescript/android/-/android-8.3.1.tgz#107f8eb567cd7caf64b76d5c1510cd29998204f3"
+  integrity sha512-Q82ZuACx4DapjKsvqlGVEhcIAJR111ppMRL+Dnw2Jkt1YeE5CFQUZGq1mE72BfzrqrV6RrkgHtwS4EF511JxbQ==
+
 "@nativescript/core@~8.3.0":
   version "8.3.5"
   resolved "https://registry.yarnpkg.com/@nativescript/core/-/core-8.3.5.tgz#3f8aeee18e64a7c0343df05aec2c18a88952c35f"
@@ -1024,6 +1029,11 @@ dir-glob@^3.0.1:
   integrity sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA==
   dependencies:
     path-type "^4.0.0"
+
+dominative@^0.0.6-alpha.7:
+  version "0.0.6-alpha.7"
+  resolved "https://registry.yarnpkg.com/dominative/-/dominative-0.0.6-alpha.7.tgz#d44c5e4556d086af9475b0af6fd0a485fb169678"
+  integrity sha512-GJedI0oAGnWYhgu8LEJJY9fj66zqtNA0sCHuUysCTOJ9peXDFemTE3wVbve8ZKckCW8U60vaV09zjOX5viIYKw==
 
 dotenv-defaults@^2.0.2:
   version "2.0.2"
@@ -2297,16 +2307,6 @@ svelte-loader@^3.1.2:
     svelte-dev-helper "^1.1.9"
     svelte-hmr "^0.14.2"
 
-svelte-native-preprocessor@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/svelte-native-preprocessor/-/svelte-native-preprocessor-1.0.0.tgz#dffd216c89bff0045dad1645bad12fe27542593b"
-  integrity sha512-U36DsUbxJIY3eiCYUBDjxkEiglhtxpNmOb5XvIxvOgoWxJlp0AaolTkow/Oqe9q5m9FMvUmr3vk1us5UOHu9Sg==
-
-svelte-native@~1.0.0:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/svelte-native/-/svelte-native-1.0.5.tgz#1174a3ef26391bad46a3194b881488b3cb355910"
-  integrity sha512-lBUhZop2Q6ygwCBis0MUe3TC2uhH4/rX1wHg5UzriqKnp4TGyejbAZgXDFFCeVmJwVErf8veLOCPTypqQWTV2Q==
-
 svelte-preprocess@^4.7.0:
   version "4.10.7"
   resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-4.10.7.tgz#3626de472f51ffe20c9bc71eff5a3da66797c362"
@@ -2405,6 +2405,11 @@ typescript@~4.5.5:
   version "4.5.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.5.tgz#d8c953832d28924a9e3d37c73d729c846c5896f3"
   integrity sha512-TCTIul70LyWe6IJWT8QSYeA54WQe8EjQFU4wY52Fasj5UKx88LNYKCgBEHcOMOrFF1rKGbD8v/xcNWVUq9SymA==
+
+undom-ng@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/undom-ng/-/undom-ng-1.0.2.tgz#5f734a00a2f16b4df44f7c0636b3910388355188"
+  integrity sha512-QEhnE0mAWn8zfe5U71EjZraOi9xh4dEVWeVULZyF18yQVbv2enZIAJzp03QlglTGubS19lAH17ah06P2vqJv3w==
 
 universalify@^2.0.0:
   version "2.0.0"

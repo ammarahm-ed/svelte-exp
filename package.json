@@ -6,14 +6,15 @@
   "dependencies": {
     "@nativescript/core": "~8.3.0",
     "@nativescript/theme": "~3.0.2",
-    "svelte-native": "~1.0.0"
+    "dominative": "^0.0.6-alpha.7",
+    "undom-ng": "^1.0.2"
   },
   "devDependencies": {
+    "@nativescript/android": "8.3.1",
     "@nativescript/types": "~8.3.0",
     "@nativescript/webpack": "~5.0.9",
     "svelte": "~3.44.0",
     "svelte-loader": "^3.1.2",
-    "svelte-native-preprocessor": "^1.0.0",
     "svelte-preprocess": "^4.7.0",
     "typescript": "~4.5.5"
   }

@@ -1,10 +1,12 @@
-/*
-In NativeScript, the app.ts file is the entry point to your application.
-You can use this file to perform app-level initialization, but the primary
-purpose of the file is to pass control to the app’s first page.
-*/
-
-import { svelteNativeNoFrame } from 'svelte-native'
-import App from './App.svelte'
-
-svelteNativeNoFrame(App, {})
+import { Application } from "@nativescript/core";
+import {
+    aliasTagName, document,
+    register
+} from "dominative";
+import App from "./App.svelte";
+register(global);
+aliasTagName((tag) => tag.toLowerCase());
+//@ts-ignore
+const app = new App({ target: document });
+//@ts-ignore
+Application.run({ create: () => app.$$.root });
