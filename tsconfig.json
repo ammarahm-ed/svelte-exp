@@ -4,6 +4,7 @@
     "target": "es2017",
     "module": "esnext",
     "moduleResolution": "node",
+    "jsxFactory": "svelteNative.JSX.createElement",
     "lib": ["es2017"],
     "sourceMap": true,
     "noEmitHelpers": true,
