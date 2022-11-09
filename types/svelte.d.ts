@@ -17,7 +17,7 @@ declare global {
     ): Element[Key];
 
     function createElement<
-      Elements extends NSDefaultComponents,
+      Element extends NSDefaultComponents,
       Key extends keyof NSDefaultComponents,
       T
     >(
