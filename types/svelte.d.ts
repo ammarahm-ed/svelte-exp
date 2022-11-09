@@ -10,22 +10,22 @@ declare global {
     function mapElementTag(tag: any): HTMLElement<ViewBase>;
     function createElement<
       Element extends NSDefaultComponents,
-      Key extends keyof IntrinsicElements
+      Key extends keyof NSDefaultComponents
     >(
-      element: Key | undefined | null,
+      element: keyof NSDefaultComponents | undefined | null,
       attrs: Element[Key]
-    ): HTMLElementTagNameMap[Key];
+    ): Element[Key];
 
     function createElement<
-      Elements extends IntrinsicElements,
-      Key extends keyof Elements,
+      Elements extends NSDefaultComponents,
+      Key extends keyof NSDefaultComponents,
       T
     >(
       // "undefined | null" because of <svelte:element>
-      element: Key | undefined | null,
+      element: keyof NSDefaultComponents | undefined | null,
       attrsEnhancers: T,
-      attrs: Elements[Key] & T
-    ): HTMLElementTagNameMap<Key>;
+      attrs: Element[Key] & T
+    ): Element[Key];
 
     type NSDefaultComponents = {
       [K in keyof HTMLElementTagNameMap as `${Lowercase<K>}`]: HTMLElementTagNameMap[K];
