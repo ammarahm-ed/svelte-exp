@@ -1,4 +1,3 @@
-import 'svelte-native'
 import { Application } from "@nativescript/core";
 import {
     aliasTagName, document,
@@ -7,7 +6,9 @@ import {
 import App from "./App.svelte";
 
 register(global);
-aliasTagName((tag) => tag.toLowerCase());
+aliasTagName((tag) => {
+    return tag[0].toLowerCase() + tag.slice(1)
+});
 //@ts-ignore
 const app = new App({ target: document });
 //@ts-ignore

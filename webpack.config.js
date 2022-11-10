@@ -30,6 +30,9 @@ const svelte = (config, env) => {
       return {
         ...options,
         hotReload: !production,
+        compilerOptions: {
+          namespace: 'foreign'
+        },
         hotOptions: {
           injectCss: false,
           native: true,
