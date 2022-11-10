@@ -4,8 +4,8 @@
         {
          new Array(1000).fill(true).map(item => {
         
-            return  <label class="info">
-            <formattedString>
+            return <label class="info">
+            <formattedString >
                 <span class="fas" text="&#xf135;" />
                 <span text=" {message}" />
             </formattedString>

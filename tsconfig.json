@@ -4,12 +4,13 @@
     "target": "es2017",
     "module": "esnext",
     "moduleResolution": "node",
-    "jsxFactory": "svelteNative.JSX.createElement",
-    "lib": ["es2017"],
+    "jsxFactory": "svelteDominative",
+    "lib": ["dom", "es2017"],
     "sourceMap": true,
     "noEmitHelpers": true,
     "importHelpers": true,
     "baseUrl": ".",
+    "jsx": "preserve",
     "paths": {
       "~/*": ["app/*"],
       "@/*": ["app/*"]
@@ -21,6 +22,9 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipLibCheck": true
+  },
+  "svelteOptions": {
+    "namespace": "svelteDominative"
   },
   "include": ["app", "types"],
   "exclude": ["node_modules", "platforms"]
